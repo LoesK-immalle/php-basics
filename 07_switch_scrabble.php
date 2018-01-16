@@ -15,5 +15,36 @@ $punten = 0;
 // I 1 punt
 // N 1 punt
 
-
+$letters = str_split($woord);
+foreach($letters as $value){
+	switch ($value){
+		case "q":
+		  $punten += 10;
+		  break;
+		case "u":
+		  $punten += 4;
+		  break;
+		case "o":
+		  $punten +=1;
+		  break;
+		case "t":
+		  $punten += 2;
+		  break;
+		case "e":
+		  $punten += 1;
+		  break;
+		case "r":
+		  $punten +=2;
+		  break;
+		case "i":
+		  $punten += 10;
+		  break;
+		case "n":
+		  $punten += 4;
+		  break;
+		default:
+		  break;
+	}
+}
+echo $punten;
 ?>
